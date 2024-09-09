@@ -1,0 +1,104 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="container-custom2 ">
+
+    <div class="side-nav">
+        <h4 class="mb-2 title"><a href="/" 
+            class="side-nav-title">
+            EcoDrop</a></h4>
+        <ul class="nav-list">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/mission">MISSION</a></li>
+            <li><a href="/team">TEAM</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/residence">RESIDENCE</a></li>
+            <li><a href="/business">BUSINESS</a></li>
+            <li><a href="/partner">PARTNER</a></li>
+        </ul>
+        <hr class="divider">
+        <div class="office-info">
+            <h4>OFFICE</h4>
+            <p><strong>Address</strong><br>
+            Cheeryal Kaman<br>
+            GCET B.tech clg<br>
+            INDIA</p>
+            <p><strong>Contact</strong><br>
+            (+91) 8688470635<br>
+            <a href="/">ecodrop.gogreen@gmail.com</a></p>
+        </div>
+        <div class="vertical-line"></div>
+    </div>
+    
+    <div class="form-section partnerform">
+        <h3 style="padding-top: 3rem; text-align: center;">Lets Join Our Network</h3>
+        <form action="/newpartner" class="needs-validation mt-5" method="post" novalidate>
+            <div class="mb-lg-5">
+                <label for="facilityname" class="form-label">Facility Name:</label>
+                <input type="text" class="form-control" name="facility[facilityname]" 
+                placeholder="Facility Name" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="facilitid" class="form-label">Facility ID:</label>
+                <input type="text" class="form-control" name="facility[facilityid]" 
+                placeholder="Facility ID" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" name="facility[email]" 
+                placeholder="facility@email.com" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="mobileno" class="form-label">Mobile Number:</label>
+                <input type="text" class="form-control" name="facility[mobileno]" 
+                placeholder="Mobile No" required>
+            </div>
+            <div class="row mb-lg-5">
+                <div class="col">
+                    <label for="ewaste" class="form-label">Types of E-Waste Accepted:</label>
+                    <input type="text" class="form-control" name="facility[ewaste]" 
+                    placeholder="Type of E-Waste " required>
+                </div>
+                <div class="col">
+                    <label for="services" class="form-label">Services:</label>
+                    <input type="text" class="form-control" name="facility[services]" 
+                    placeholder="pickup services data destruction" required>
+                </div>  
+            </div>
+            <div class="mb-lg-5">
+                <label for="days" class="form-label">Days of Operations:</label>
+                <input type="text" class="form-control" name="facility[days]" 
+                placeholder="Days of operations" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="address" class="form-label">Facility Address:</label>
+                <input type="text" class="form-control" name="facility[address]" 
+                placeholder="Facility Address" required>
+            </div>
+            <div class="row mb-lg-5">
+                <div class="col">
+                    <label for="pincode" class="form-label">Pin Code:</label>
+                    <input type="text" class="form-control" name="facility[pincode]" 
+                    placeholder="Pin Code" required>
+                </div>
+                <div class="col">
+                    <label for="city" class="form-label">City:</label>
+                    <input type="text" class="form-control" name="facility[city]" 
+                    placeholder="city" required>
+                </div>
+            </div>
+            <div class="row mb-lg-5">
+                <div class="col">
+                    <label for="state" class="form-label">State:</label>
+                    <input type="text" class="form-control state" name="facility[state]" 
+                    placeholder="state" required>
+                </div>
+                <div class="col">
+                    <label for="country" class="form-label">Country:</label>
+                    <input type="text" class="form-control country" name="facility[country]" 
+                    placeholder="country" required>
+                </div>
+            </div>
+            <button class="btn btn-danger">Register</button>
+        </form>
+    </div>
+</div>

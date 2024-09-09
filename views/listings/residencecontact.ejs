@@ -1,0 +1,64 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="residencecontact">
+
+</div>
+<!-- <div class="residenceinfo">
+    <h2>Book A Free E-Drop</h2>
+</div> -->
+<div class="container-custom1">
+
+    <div class="image-section">
+        <!-- This div will display the background image -->
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+        <h2>Book A Free E-Drop</h2>
+        <form method="post" action="/newresidence" novalidate class="needs-validation">
+            <div class="row mb-lg-5">
+                <div class="col">
+                    <label for="firstname" class="form-label">First Name:</label>
+                    <input type="text" 
+                    class="form-control" 
+                    name="residence[firstname]" 
+                    placeholder="First Name"
+                    required
+                    >
+                </div>
+                <div class="col">
+                    <label for="lastname" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control" 
+                    name="residence[lastname]" placeholder="Last Name"required>
+                </div>
+            </div>
+            <div class="mb-lg-5">
+                <label for="contactNumber" class="form-label">Contact Number:</label>
+                <input type="text" class="form-control" 
+                name="residence[contact]" placeholder="Contact number" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="emailAddress" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" 
+                name="residence[email]" placeholder="@helloworld.com" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="ewaste" class="form-label">E-Waste Type:</label>
+                <input type="text" class="form-control" 
+                name="residence[ewaste]" placeholder="E-Waste Type" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="housenumber" class="form-label">Residence Number:</label>
+                <input type="textarea" class="form-control" 
+                name="residence[housenumber]" 
+                placeholder="Enter your residence name" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="address" class="form-label">Residence Address:</label>
+                <textarea  class="form-control" 
+                name="residence[address]" type="text" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </form>
+    </div>
+</div>

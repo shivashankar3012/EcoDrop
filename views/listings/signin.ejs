@@ -1,0 +1,49 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="container-custom3">
+
+    <div class="side-nav">
+        <h4 class="mb-2 title"><a href="/" 
+            class="side-nav-title">
+            EcoDrop</a></h4>
+        <ul class="nav-list">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/mission">MISSION</a></li>
+            <li><a href="/team">TEAM</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/residence">RESIDENCE</a></li>
+            <li><a href="/business">BUSINESS</a></li>
+            <li><a href="/partner">PARTNER</a></li>
+        </ul>
+        <hr class="divider">
+        <div class="office-info">
+            <h4>OFFICE</h4>
+            <p><strong>Address</strong><br>
+            Cheeryal Kaman<br>
+            GCET B.tech clg<br>
+            INDIA</p>
+            <p><strong>Contact</strong><br>
+            (+91) 8688470635<br>
+            <a href="/">ecodrop.gogreen@gmail.com</a></p>
+        </div>
+        <div class="vertical-line3"></div>
+    </div>
+    <div class="form-section partnerform">
+        <div class="row mt-3">
+            <h1 class="mb-5">Signin for EcoDrop</h1>
+            <div class="col ">
+                <form class="needs-validation" method="post" action="/signin"  novalidate>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">User Name:</label>
+                        <input type="text" class="form-control" name="username" id="username" required>
+                        <div class="valid-feedback">Looks Good!</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" name="password" id="password" required>
+                    </div>
+                    <button class="btn btn-outline-success mt-4">Signin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

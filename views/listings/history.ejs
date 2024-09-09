@@ -1,0 +1,14 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<h1 class="offset-2 mt-4 mb-3">My Customers Details</h1>
+<div class="row offset-1">
+    <% for(let partner of partners){ %>
+    <div class="card col-lg-2 col-md-1 " style="width: 35rem; border-radius: 10px;">
+        <div class="card-body">
+          <h5 class="card-title mb-lg-3">Customer Name: &nbsp;&nbsp;<%= partner.customername %></h5>
+          <h6 class="card-subtitle mb-3 text-body-secondary"><b>Type of E-Waste: &nbsp;&nbsp;</b><%= partner.customerewaste %></h6>
+          <p class="card-text"><b>Customer Email:</b> &nbsp;&nbsp;<%= partner.customeremail %></p>
+          <p class="card-text"><b>Customer Address:</b> &nbsp;&nbsp;<%= partner.customeraddress %></p>
+        </div>
+    </div>
+    <% } %>
+</div>

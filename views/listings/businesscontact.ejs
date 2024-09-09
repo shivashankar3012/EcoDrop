@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="businesscontact">
+
+</div>
+
+<div class="container-custom2">
+
+    <div class="image-section">
+        <!-- This div will display the background image -->
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+        <h2>Book A Free E-Drop</h2>
+        <form action="/newbusiness" method="post" class="needs-validation" novalidate>
+            <div class="mb-lg-5">
+                <label for="businessname" class="form-label">Business Name:</label>
+                <input type="text" class="form-control" name="business[businessname]" placeholder="Business Name" required>
+            </div>
+            <div class="row mb-lg-5">
+                <div class="col">
+                    <label for="firstname" class="form-label">First Name:</label>
+                    <input type="text" class="form-control" name="business[firstname]" placeholder="First name" required>
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control" name="business[lastname]" placeholder="Last name" required>
+                </div>
+            </div>
+            <div class="mb-lg-5">
+                <label for="contactNumber" class="form-label">Contact Number:</label>
+                <input type="text" class="form-control" name="business[contact]" placeholder="Contact number" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="emailAddress" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" name="business[email]" placeholder="@helloworld.com" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="waste" class="form-label">E-Waste Type:</label>
+                <input type="text" class="form-control" name="business[ewaste]" placeholder="E-Waste Type" required>
+            </div>
+            <div class="mb-lg-5">
+                <label for="address" class="form-label">Organization/Business Address:</label>
+                <textarea name="business[address]" class="form-control" required></textarea>
+            </div>
+            <div class="row mb-lg-5">
+                <div class="col">
+                    <label for="city" class="form-label">City:</label>
+                    <input type="text" class="form-control" name="business[city]" placeholder="City" required>
+                </div>
+                <div class="col">
+                    <label for="country" class="form-label">Country:</label>
+                    <input type="text" class="form-control" name="business[country]" placeholder="Country" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </form>
+    </div>
+</div>

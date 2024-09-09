@@ -1,0 +1,516 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+    height: 4rem;
+    background-color: white !important;
+}
+.logo{
+    color: darkgreen;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+    margin-left: 0.5rem;
+}
+/* .navbar-collapse{
+    margin-left: 30%;
+} */
+.title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.idling{
+  background-image: url("/images/Electronic-Waste-Background-Wallpaper-85091.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+.container{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.intro h1 , h2  {
+  color: white;
+}
+.intro p{
+  color: white;
+}
+.intro{
+  /* margin-top: 9rem; */
+  align-items: center;
+  margin-left: 4rem;
+  padding-top: 5rem;
+}
+.intro .btn{
+  margin-right: 1rem;
+} 
+.homePageIntro{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  background-color: rgb(223, 236, 248);
+}
+.homePageIntro h1, p{
+  color: #222222;
+}
+.homePageIntro h1{
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+.homePageIntro p{
+  line-height: 2.5rem;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.homePageIntro .intro-title{
+  color: green;
+}
+.help h1{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.help hr{
+  width: 25%;
+  /* height: 2rem; */
+  border: 2px solid blue;
+  margin: auto;
+}
+.help{
+  margin: 5rem 0 3rem 0;
+}
+.helpcard{
+  margin-left: 3rem;
+  margin-right:3rem;
+  margin-bottom: 3rem;
+}
+.card{
+  margin: 1.5rem;
+  height: 12rem;
+}
+.uses{
+  background-image: url("/images/uses.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.uses h1{
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  padding: 2rem;
+}
+.usescard{
+  color: white;
+}
+.usescard p{
+  color: white;
+  font-size: small;
+}
+.usescard .icon{
+  margin-right: 1rem;
+  font-size: 3rem;
+  margin-top: 1rem;
+  align-tracks: center;
+}
+.cardDisplay{
+  margin-left: 2rem;
+}
+.wholeCard{
+  margin:2rem;
+}
+.imgcard1{
+  background-image: url("/images/card/residence.avif");
+  background-size:cover;
+}
+.imgcard2{
+  background-image: url("/images/card/institutions.jpeg");
+  background-size:cover;
+}
+.imgcard3{
+  background-image: url("/images/card/localcouncil.avif");
+  background-size:cover;
+}
+.imgcard4{
+  background-image: url("/images/card/govt.jpeg");
+  background-size:cover;
+}
+.imgcard5{
+  background-image: url("/images/card/IT-Company.jpg");
+  background-size:cover;
+}
+.imgcard6{
+  background-image: url("/images/card/electronic-waste.jpg");
+  background-size:cover;
+}
+.commoncard:hover{
+  opacity: 0.6;
+  
+  font-weight: bold;
+}
+.commoncard h2:hover{
+  /* color: rgb(73, 69, 69); */
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+
+}
+.card-body h2{
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  font-size:xx-large;
+  font-weight: bolder;
+}
+.serve{
+  background-image: url("/images/services/frontpage.png");
+  background-size: contain;
+  height: 50vh;
+}
+
+.residencecontact{
+  background-image: url("/images/contact/introimg1.png");
+  background-size:cover;
+  height: 70vh;
+}
+.businesscontact{
+  background-image: url("/images/contact/download.jpg");
+  background-size:cover;
+  height: 70vh;
+}
+
+.ourservices h2{
+  color: #222222;
+  text-align: center;
+  position: relative;
+}
+/* .ourservices hr{
+  width: 8rem;
+  height: 2px;
+  border: 2px solid red;
+  margin:auto;
+} */
+.servicetitle::after {
+  content: '';
+  display: block;
+  width: 10rem;
+  height: 4px;
+  background-color: #a3c900; /* Green color matching the image */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  margin-left: 37rem; 
+}
+.servicecardicon{
+  margin: auto;
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: red;
+}
+.servicecard{
+  border-radius: 2rem;
+}
+.servicecard:hover{
+  background-color: lightblue;
+}
+.servicescard{
+  /* margin: auto; */
+  margin-left: 9rem;
+  /* margin-right: 3rem; */
+}
+/* .residenceinfo{
+  margin: 3rem 0;
+}
+.residenceinfo h2{
+  text-align: center;
+  color: black;
+} */
+.form-section h2{
+  color: black;
+  margin: 2rem;
+  margin-bottom: 5rem;
+}
+.form-section h2::after {
+  content: '';
+  display: block;
+  width: 12rem;
+  height: 4px;
+  background-color: #a3c900; /* Green color matching the image */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  margin-left: 47rem; 
+}
+.container-custom1{
+  margin-top: 3rem;
+  display: flex;
+  height: 160vh;
+}
+.image-section{
+  background-image: url("/images/edrop.png");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+.container-custom2{
+  margin-top: 3rem;
+  display: flex;
+  height: 180vh;
+}
+
+.partnerimg{
+  background-image: url("/images/partners/partner2.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+.partnerimg h1{
+  font-weight: bolder;
+  color: white;
+  font-size: 50px;
+  padding-top: 8rem;
+  margin-left: 5rem;
+}
+.partnerimg h4{
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  margin-left: 5rem;
+}
+.partnerimg .btn{
+  margin: 1rem;
+  margin-left: 5rem;
+}
+.partnerinfo{
+  margin: 3rem;
+}
+.partnerinfo h3{
+  padding: 0 7rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.partnerinfo h6{
+  padding: 0 7rem;
+  text-align: center;
+}
+.partnerinfo p{
+  padding: 0 7rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.partnerinfo p{
+  padding: 0 7rem;
+  line-height: 3rem;
+}
+.partnerimg2{
+  background-image: url("/images/partners/partner4.jpeg");
+  background-size: cover;
+  height: 80vh;
+}
+.partnerimg2 h3{
+  text-align: center;
+  padding-top: 5rem;
+}
+.partnerimg2 p{
+  padding-top: 2rem;
+  text-align:center;
+  font-weight: 600;
+}
+
+/* footer */
+
+.footer-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h1 {
+  /* font-size: 18px; */
+  margin-bottom: 15px;
+  color: black;
+}
+.footer-section h2{
+   font-size: 18px;
+   margin-bottom: 15px;
+   color: black;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: black
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+.footer-section ul li i {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: black;
+}
+
+
+.container-custom2{
+  height: 210vh;
+}
+
+.partnerform{
+  margin-left: 10rem;
+}
+.side-nav {
+  margin-left: 5rem;
+  width: 250px;
+  background-color: #00A2E8; /* Set the background color */
+  padding: 20px;
+  color:white; 
+  font-family: Arial, sans-serif; 
+  height: 110vh;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 15px 0;
+  font-size: larger;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
+
+.nav-list a:hover {
+  color: white; 
+}
+
+.divider {
+  border: 1px solid black; 
+  margin: 20px 0;
+}
+
+.office-info {
+  margin-top: 20px;
+}
+
+.office-info h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.office-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.office-info a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.office-info a:hover {
+  color: #000000;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  margin-left: 17rem;
+  width: 1px;
+  height: 225vh; 
+  background-color: black; 
+}
+.side-nav-title{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.side-nav-title:hover{
+  color: #000000;
+}
+
+.team-intro-img{
+  background-image: url("/images/team/teamintro.jpg");
+  background-size: contain;
+  height: 80vh;
+}
+.vertical-line2 {
+  position: absolute;
+  top: 100vh;
+  margin-left: 17rem;
+  width: 1px;
+  height: 130vh; 
+  background-color: black; 
+}
+.ourmission{
+  background-image: url("/images/mission/back.webp");
+  background-size: cover;
+  height: 80vh;
+}
+.mission-info{
+  margin: 0 8rem;
+  /* text-align: center; */
+}
+.missiondiv{
+  display: flex;
+}
+.mission-info p{
+  margin-top: 3rem;
+  text-align: justify;
+}
+.vertical-line3 {
+  position: absolute;
+  top: 0;
+  margin-left: 17rem;
+  width: 1px;
+  height: 130vh; 
+  background-color: black; 
+}
+.container-custom3{
+  margin-top: 3rem;
+  display: flex;
+  height: 110vh;
+}

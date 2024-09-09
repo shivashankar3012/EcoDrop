@@ -1,0 +1,32 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+    <div class="idling">
+        <div class="intro">
+            <h1>EcoDrop</h1>
+            <h2>Recycling & Secure Data Destruction</h2>
+            <p>Providing market-leading solutions in e-waste recycling,<br>
+               Data destruction & IT Asset management.</p>
+            <a href="/business" style="text-decoration:none;"><button class="btn btn-outline-light">Business</button></a>
+            <a href="/residence" style="text-decoration: none;"><button class="btn btn-outline-light">Residence</button></a>
+        </div>
+    </div>
+    <div class="homePageIntro">
+        <h1>Nationwide Electronics & Computer Recycling</h1>
+        <h1 class="intro-title">EcoDrop</h1>
+        <p>EcoDrop is committed to REDUCE waste in our landfills by recycling what other companies no longer accept. <br>
+            We REUSE any item or device that is still functioning and, in many cases, return revenue to you. <br>
+            We RECYCLE the rest. <br>
+            We are a zero-landfill company. There is no need to waste time and money with multiple vendors and processes. One call to EcoDrop and we will create a recycling plan specific to your needs. We service companies large and small, government agencies and municipalities, and even provide recycling support for local residents.</p>
+    </div>
+    <div class="help">
+        <h1>WHO WE CAN HELP</h1>
+        <hr>
+    </div>
+    <div class="helpcard">
+        <%- include("../includes/card.ejs")%>
+    </div>
+    <div class="uses">
+        <h1>Why Total Green Recycling ?</h1>
+        <%- include("../includes/usescard.ejs") %>
+    </div>
+</body>
