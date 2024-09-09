@@ -1,7 +1,9 @@
-#EcoDrop
+# EcoDrop
+
 EcoDrop is a web application designed to help individuals and businesses manage their electronic waste (e-waste) responsibly. The platform connects users with nearby e-waste recycling facilities and provides an easy way for them to locate and deposit their e-waste. The goal of EcoDrop is to make e-waste recycling more accessible, reduce environmental harm, and promote sustainable waste disposal practices.
 
-#Features
+# Features
+
 E-Waste Facility Locator: Users can find the nearest registered e-waste recycling facility based on their location.
 Facility Registration: E-waste facilities can register on the platform to expand their reach and visibility.
 Geolocation: Automatic conversion of addresses into geolocation coordinates (latitude and longitude) for accurate facility mapping.
@@ -20,14 +22,16 @@ Mongoose for object data modeling (ODM)
 Session and Flash middleware for user feedback
 Axios for HTTP requests
 
-#Installation
+# Installation
+
 Clone the repository.
 Install the required dependencies using npm install.
 Set up a MongoDB database and update the mongoUrl in the configuration file.
 Get an API key from OpenCage for geolocation services and add it to your environment variables.
 Run the server using node app.js.
 
-#Usage
+# Usage
+
 Register as an individual or a recycling facility.
 For individuals: Use the service to find the nearest e-waste recycling facility.
 For facilities: Register your facility to be part of the EcoDrop platform and expand your customer base.
