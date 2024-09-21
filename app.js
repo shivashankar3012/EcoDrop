@@ -22,6 +22,7 @@ const flash = require("connect-flash");
 const customerPartners = require("./models/customerPartner.js");
 const {isLoggedIn} = require("./middleware.js");
 const {saveRedirectUrl} = require("./middleware.js");
+const feedback = require("./models/feedback.js");
 
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
@@ -137,8 +138,13 @@ app.get("/residence",(req,res)=>{
     res.render("listings/residencecontact.ejs");
 });
 
-app.get("/services",(req,res)=>{
-    res.render("listings/services.ejs");
+app.get("/services",async (req,res)=>{
+    try{
+        let reviews = await feedback.find();
+        res.render("listings/services.ejs",{reviews});
+    }catch(err){
+        console.log(err);
+    }
 });
 
 app.get("/business",(req,res)=>{
@@ -247,7 +253,9 @@ app.get("/team",(req,res)=>{
     res.render("listings/team.ejs");
 })
 
-
+app.get("/feedback",(req,res)=>{
+    res.render("listings/feedback.ejs");
+})
 
 app.get("*",(req,res,next)=>{
     next(new expressError(statusCode=404, message= "page not found!"));
@@ -258,6 +266,13 @@ app.use((err,req,res,next)=>{
     let{statusCode = 500, message = "Something went wrong!"} = err;
     res.status(statusCode).send(message);
 });
+
+app.post("/newfeedback", wrapAsync( async (req,res)=>{
+    let newFeedback = new feedback(req.body.feedback);
+    await newFeedback.save();
+    req.flash("success", "Your Feedback is Successfully Submited");
+    res.redirect("/feedback");
+}));
 app.listen(port, ()=>{
     console.log(`app is listening on port number ${port}`);
 });

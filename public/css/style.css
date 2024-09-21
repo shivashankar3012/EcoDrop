@@ -472,11 +472,11 @@
   color: #000000;
 }
 
-.team-intro-img{
+/* .team-intro-img{
   background-image: url("/images/team/teamintro.jpg");
   background-size: contain;
   height: 80vh;
-}
+} */
 .vertical-line2 {
   position: absolute;
   top: 100vh;
@@ -486,10 +486,16 @@
   background-color: black; 
 }
 .ourmission{
-  background-image: url("/images/mission/back.webp");
+  background-image: url("/images/mission/ourmissionhd.jpeg");
   background-size: cover;
   height: 80vh;
 }
+/* .ourmissionTitle{
+  color: white;
+  font-weight: bolder;
+  padding-top: 8rem;
+  padding-left: 1rem;
+} */
 .mission-info{
   margin: 0 8rem;
   /* text-align: center; */
@@ -514,3 +520,24 @@
   display: flex;
   height: 110vh;
 }
+
+/* feedback */
+
+.feedback{
+  height: 80vh;
+  width: 30rem;
+  border: 3px solid lightgreen;
+  margin: 3rem auto;
+  box-shadow: 5px 5px 15px green;
+  background-color: lightgreen;
+  color: green;
+}
+.feedback .btn{
+  margin-left: 1.5rem!important;
+  color: green;
+}
+/* .shiva{
+  background-image: url("/images/ourTeam/shiva.jpg");
+  background-size: cover;
+  border-radius: 40%;
+} */

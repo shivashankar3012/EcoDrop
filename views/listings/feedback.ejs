@@ -1,0 +1,19 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="feedback">
+    <h2 class="mb-lg-5 mt-3" style="color: darkgreen; text-align: center;">Feedback!</h2>
+    <form action="/newfeedback" method="post">
+        <div class="mb-3 m-4">
+            <label for="exampleFormControlInput1" class="form-label"><b>Name</b></label>
+            <input type="text" class="form-control" name="feedback[name]" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        <div class="mb-3 m-4">
+            <label for="exampleFormControlInput1" class="form-label"><b>Email address</b></label>
+            <input type="email" class="form-control" name="feedback[email]" id="exampleFormControlInput1" placeholder="user@gamil.com">
+        </div>
+        <div class="m-4">
+            <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+            <textarea class="form-control" name="feedback[message]" id="exampleFormControlTextarea1" rows="3" placeholder="we value your feedback"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-success"><b>Submit</b></button>
+    </form>
+</div>
