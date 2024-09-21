@@ -23,11 +23,11 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner" style="text-align: center; height: 60vh; width: 75vh; margin: auto;">
+        <div class="carousel-inner" style="text-align: center; height: 65vh; width: 75vh; margin: auto;">
             <!-- <div style="text-align: center; height: 20rem;"> -->
                 <div class="carousel-item active mt-lg-5">
                     <div class="card border-info-subtle shadow-lg p-3 bg-info-subtle" 
-                    style="width: 25rem; border: whitesmoke;">
+                    style="width: 25rem; border: whitesmoke; height: auto;">
                     <!-- shadow-lg p-3 mb-5 bg-body-tertiary rounded -->
                         <div class="card-header">
                           Shradha Khapra
@@ -41,19 +41,20 @@
                     </div>
                 </div>
                 <% for(review of reviews){ %>
-                <div class="carousel-item mt-lg-5 ">
-                    <div class="card border-info-subtle shadow-lg p-3 bg-info-subtle rounded" style="width: 25rem; border: whitesmoke;">
-                        <div class="card-header">
-                            <%= review.name %>
-                        </div>
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                            <p style="font-size: small;"><%= review.message %></p>
-                            <footer class="blockquote-footer"><cite title="Source Title"><%= review.email %></cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
+                  <div class="carousel-item mt-lg-5 ">
+                      <div class="card border-info-subtle shadow-lg p-3 bg-info-subtle rounded" 
+                      style="width: 25rem; border: whitesmoke; height: auto;">
+                          <div class="card-header">
+                              <%= review.name %>
+                          </div>
+                          <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                              <p style="font-size: small;"><%= review.message %></p>
+                              <footer class="blockquote-footer"><cite title="Source Title"><%= review.email %></cite></footer>
+                              </blockquote>
+                          </div>
+                      </div>
+                  </div>
                 <% } %>
             <!-- </div> -->
         </div>
