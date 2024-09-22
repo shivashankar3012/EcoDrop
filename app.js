@@ -141,6 +141,7 @@ app.get("/residence",(req,res)=>{
 app.get("/services",async (req,res)=>{
     try{
         let reviews = await feedback.find();
+        // console.log(reviews);
         res.render("listings/services.ejs",{reviews});
     }catch(err){
         console.log(err);
@@ -166,9 +167,9 @@ app.post("/newresidence",wrapAsync(async (req,res)=>{
     res.redirect("/residence");
     try{
         const data = await openCage.geocode({ q: address , key: process.env.APIKEY});
-        console.log(data);
+        // console.log(data);
         const coordinates = data.results[0].geometry;
-        console.log(coordinates);
+        // console.log(coordinates);
         const customerLat = coordinates.lat;
         const customerLng  = coordinates.lng;
         await getnearestfacility(newresidence, customerLat, customerLng);
