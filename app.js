@@ -162,17 +162,19 @@ app.post("/newresidence",wrapAsync(async (req,res)=>{
     let newresidence = new residence(req.body.residence);
     await newresidence.save();
     req.flash("success", "Request Accepted");
-    res.redirect("/residence");
     let address = req.body.residence.address;
+    res.redirect("/residence");
     try{
         const data = await openCage.geocode({ q: address , key: process.env.APIKEY});
+        console.log(data);
         const coordinates = data.results[0].geometry;
+        console.log(coordinates);
         const customerLat = coordinates.lat;
         const customerLng  = coordinates.lng;
         await getnearestfacility(newresidence, customerLat, customerLng);
     }catch(err){
         req.flash("error", err);
-        return res.redirect("/residence");
+        res.redirect("/residence");
     }
 }));
 
