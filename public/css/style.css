@@ -237,7 +237,7 @@
   display: block;
   width: 12rem;
   height: 4px;
-  background-color: #a3c900; /* Green color matching the image */
+  /* background-color: #a3c900; Green color matching the image */
   position: absolute;
   bottom: -5px;
   left: 0;

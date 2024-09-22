@@ -1,51 +1,58 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top"  >
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top"  >
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="/">&nbsp;<i class="fa-solid fa-leaf"></i> &nbsp; EcoDrop</a>
+      <a class="navbar-brand logo" href="/">&nbsp;<i class="fa-solid fa-leaf"></i> EcoDrop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <div class="navbar-nav ms-auto">
 
           <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" 
-                  data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                  <a class="nav-link dropdown-toggle mx-2" href="#" role="button" 
+                  data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 300;">
                     About Us
                   </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/team" style="font-weight: 600;">Our Team</a></li>
-              <li><a class="dropdown-item" href="/mission" style="font-weight: 600;">Mission</a></li>
+            <ul class="dropdown-menu mx-2">
+              <li><a class="dropdown-item" href="/team" style="font-weight: 300;">Our Team</a></li>
+              <li><a class="dropdown-item " href="/mission" style="font-weight: 300;">Mission</a></li>
               </ul>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/services" style="font-weight: 600;">Services</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="/services" style="font-weight: 300;">Services</a>
             </li>
             
-            <li class="nav-item"></li>
-              <a class="nav-link" href="/partner" style="font-weight: 600;">Partner Program</a>
+            <li class="nav-item mx-2"></li>
+              <a class="nav-link" href="/partner" style="font-weight: 300;">Partner Program</a>
             </li>
-            <div class="navbar-nav">
-              <% if(currUser){ %>
-                <a class="nav-link" href="/signout" style="font-weight: 600;">Signout</a>
-              <% } %>
-              <% if(!currUser){%>
-                
-                <a class="nav-link" href="/signin" style="font-weight: 600;">Signin</a>
-                <a class="nav-link" href="/signup" style="font-weight: 600; margin-left:0;">Signup</a>
-              <% } %>
-            </div>
-            <ul class="navbar-nav"></ul>
+            
+            <ul class="navbar-nav mx-2"></ul>
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" style="font-weight: 600;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" style="font-weight: 300;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Contact Us
                   </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/business" style="font-weight: 600;">Business</a></li>
-                  <li><a class="dropdown-item" href="/residence" style="font-weight: 600;">Residence</a></li>
+                  <li><a class="dropdown-item" href="/business" style="font-weight: 300;">Business</a></li>
+                  <li><a class="dropdown-item" href="/residence" style="font-weight: 300;">Residence</a></li>
                 </ul>
               </li>
             </ul>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="/feedback" style="font-weight: 600;">Feedback</a>
+            <li class="nav-item mx-2"></li>
+              <a class="nav-link" href="/feedback" style="font-weight: 300;">Feedback</a>
             </li>
         </div>
+        <div class="navbar-nav ms-lg-auto" style="margin-right: 1rem;">
+              <% if(currUser){ %>
+                <a class="nav-link" href="/signout" style="font-weight: 300;">Logout</a>
+              <% } %>
+              <% if(!currUser){%>
+                <span style="border: 2px solid black; border-radius: 50%; width: 2.5rem; height: 2.5rem;
+                  text-align:center;background-color: lightgray;">
+                  <a href="/signin"><i class="fa-solid fa-user" style="font-size: 1.5rem; color: black; padding-top:5px;"></i></a>
+                </span>
+                <!-- <a class="nav-link" href="/signin" style="font-weight: 600;">Signin</a>
+                <a class="nav-link" href="/signup" style="font-weight: 600; margin-left:0;">Signup</a> -->
+              <% } %>
+          </div>
       </div>
     </div>
 </nav>
