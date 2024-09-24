@@ -1,6 +1,8 @@
 const Facility = require("../models/partner.js"); // Import your Facility model
 const nodemailer = require('nodemailer');
 const customerPartner = require("../models/customerPartner.js");
+
+// Haversine formula
 function getDistanceFromLatLonInKm(lat1, lng1, lat2, lng2) {
     const R = 6371; // Earth's radius in km
     const dLat = deg2rad(lat2 - lat1); // Difference in latitude
