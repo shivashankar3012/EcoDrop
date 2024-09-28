@@ -30,7 +30,7 @@
     </div>
     
     <div class="form-section partnerform">
-        <h3 style="padding-top: 3rem; text-align: center;">Lets Join Our Network</h3>
+        <h3 style="padding-top: 1rem; text-align: center;">Lets Join Our Network</h3>
         <form action="/newpartner" class="needs-validation mt-5" method="post" novalidate>
             <div class="mb-lg-5">
                 <label for="facilityname" class="form-label">Facility Name:</label>
@@ -98,7 +98,24 @@
                     placeholder="country" required>
                 </div>
             </div>
-            <button class="btn btn-danger">Register</button>
+            <button class="btn btn-outline-primary"><span>Register</span></button>
         </form>
     </div>
 </div>
+<style>
+    .partnerform{
+        border: 2px solid whitesmoke;
+        border-radius: 2rem;
+        box-shadow: 3px 3px 3px 5px lightgray;
+        width: 40rem;
+        padding: 3rem;
+        margin: auto;
+    }
+    button{
+        width: 7rem;
+        height: 2.5rem;
+    }
+    span{
+        font-size: large;
+    }
+</style>

@@ -171,7 +171,7 @@
 }
 
 .residencecontact{
-  background-image: url("/images/contact/introimg1.png");
+  background-image: url("/images/contact/bck.jpeg");
   background-size:cover;
   height: 70vh;
 }
@@ -197,7 +197,7 @@
   display: block;
   width: 10rem;
   height: 4px;
-  background-color: #a3c900; /* Green color matching the image */
+  /* background-color: #a3c900; Green color matching the image */
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -216,9 +216,9 @@
   background-color: lightblue;
 }
 .servicescard{
-  /* margin: auto; */
-  margin-left: 9rem;
-  /* margin-right: 3rem; */
+    width:74%;
+    margin: auto;
+    padding: 0;
 }
 /* .residenceinfo{
   margin: 3rem 0;
@@ -237,7 +237,7 @@
   display: block;
   width: 12rem;
   height: 4px;
-  /* background-color: #a3c900; Green color matching the image */
+  /* background-color: #a3c900; fGreen color matching the image */
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -527,14 +527,16 @@
   height: 80vh;
   width: 30rem;
   border: 3px solid lightgreen;
+  border-radius: 2rem;
   margin: 3rem auto;
-  box-shadow: 5px 5px 15px green;
-  background-color: lightgreen;
-  color: green;
+  box-shadow: 5px 5px 15px rgb(166, 228, 166);
+  background-color: rgb(207, 240, 207);
+  /* color: green; */
 }
 .feedback .btn{
   margin-left: 1.5rem!important;
-  color: green;
+  /* color: green; */
+  color: #000000;
 }
 /* .shiva{
   background-image: url("/images/ourTeam/shiva.jpg");
