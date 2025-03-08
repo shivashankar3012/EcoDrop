@@ -11,7 +11,6 @@ const business = require("./models/business.js");
 const expressError = require("./utils/expressError.js");
 const wrapAsync = require("./utils/wrapAsync.js");
 const partner = require("./models/partner.js");
-const axios = require("axios");
 const openCage = require("opencage-api-client");
 const getnearestfacility = require("./utils/findfacility.js");
 const passport = require("passport");
